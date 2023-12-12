@@ -8,15 +8,25 @@ function App() {
 
   return (
     <>
-     <District></District>
+     <District name="Rajshashi" special="District"></District>
+     <District name="Rajshashi" special="District"></District>
+     <District name="Rajshashi" special="District"></District>
     </>
   )
 }
-function District (){
+const districtStyle = {
+backgroundColor : "lightblue",
+margin :"20px",
+
+
+}
+
+
+function District (props){
   return(
-    <div>
-      <h2>Name : </h2>
-    <p>Speciality :</p>
+    <div style={districtStyle}>
+      <h2>Name : {props.name}</h2>
+    <p>Speciality : {props.special}</p>
     </div>
   )
 }
